@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'shoaib3/maven-docker-agent:jdk17'
+      image 'shoaib3/maven-docker-agent:jdk21'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
             reuseNode true
     }
